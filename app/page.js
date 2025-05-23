@@ -75,19 +75,19 @@ function page() {
             </h1>
             <div className="grid grid-cols-3 h-[400px]">
               <div>
-                <Image src={Health} alt="" className="w-[400px] h-[300px] " />
+                <Image src={Health} alt="" className="w-[400px] h-[334px] " />
                 <div className="bg-blue-900 w-[400px] py-1 px-4">
                   Health and Science
                 </div>
               </div>
               <div className="">
-                <Image src={Buisness} alt="" className="w-[400px] h-[300px]" />
+                <Image src={Buisness} alt="" className="w-[400px] h-[334px]" />
                 <div className="bg-blue-400 w-[400px]  py-1 px-4">
                   Business Academics
                 </div>
               </div>
               <div>
-                <Image src={History} alt="" className="w-[400px]" />
+                <Image src={History} alt="" className="w-[400px] h-[334px]" />
                 <div className="bg-sky-600 px-4 py-1 w-[400px]">History</div>
               </div>
             </div>

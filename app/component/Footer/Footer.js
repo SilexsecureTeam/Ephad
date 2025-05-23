@@ -83,7 +83,7 @@ function Footer() {
           </div>
         </div>
       </div>
-      <hr className="mx-50 mt-20    bg-neutral-800"/>
+      <hr className="mx-50 mt-20 text-neutral-400"/>
 
       <p className="px-50 text-white py-3">&copy; 2025 alright reserve</p>
     </div>

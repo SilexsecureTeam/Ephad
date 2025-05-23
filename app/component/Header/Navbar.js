@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { FaFacebook } from "react-icons/fa";
 import { BsTwitterX } from "react-icons/bs";
 import { FiInstagram } from "react-icons/fi";
@@ -51,7 +52,7 @@ function Navbar() {
         </div>
         <ul className="flex gap-4 font-bold text-[20px] px-20">
           <li>HOME</li>
-          <li>ACADEMICS</li>
+          <Link href="/Academics"><li>ACADEMICS</li></Link>
           <li>ADMISSIONS</li>
           <li>ABOUT US</li>
           <li>CONTACT</li>
