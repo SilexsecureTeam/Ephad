@@ -13,6 +13,9 @@ import Science from "../../public/assets/Science.png";
 import SocialStudies from "../../public/assets/SocialStudies.png";
 import ArtandCraft from "../../public/assets/ArtandCraft.png";
 import PhysicalEducation from "../../public/assets/PhysicalEducation.png";
+import Classroom from  "../../public/assets/classroom.png"
+
+
 
 function page() {
   return (
@@ -292,12 +295,14 @@ function page() {
           </div>
         </div>
       </div>
+
+
       <div className="px-20 pt-80">
         <div className="relative border-2 border-black shadow-lg w-full h-[420px] shadow-black  py-10 rounded-xl">
           
           <div className="flex items-center justify-between w-full px-20 absolute -top-40">
             <Image
-              src={SocialStudies}
+              src={Classroom}
               alt=""
               className=" w-[350px]  border-2 border-black rounded-xl  h-[300px]"
             />

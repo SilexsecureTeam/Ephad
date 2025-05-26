@@ -53,7 +53,7 @@ function Navbar() {
         <ul className="flex gap-4 font-bold text-[20px] px-20">
           <li>HOME</li>
           <Link href="/Academics"><li>ACADEMICS</li></Link>
-          <li>ADMISSIONS</li>
+          <Link href="/Admission"><li>ADMISSIONS</li></Link>
           <li>ABOUT US</li>
           <li>CONTACT</li>
         </ul>
