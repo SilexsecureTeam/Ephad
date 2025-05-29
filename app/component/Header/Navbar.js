@@ -1,4 +1,5 @@
-import React from "react";
+'use client'
+import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { FaFacebook } from "react-icons/fa";
@@ -8,54 +9,105 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { GrYoutube } from "react-icons/gr";
 import { PiEnvelopeSimpleThin } from "react-icons/pi";
 import { PiPhoneIncomingThin } from "react-icons/pi";
+import { HiMenu, HiX } from "react-icons/hi"; // Hamburger and X icons
 import emslogo from "../../../public/assets/emslogo.png";
 
 function Navbar() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
     <div>
-      <div className="flex ">
-        <div className="flex py-2 text-md items-center bg-sky-950 text-white w-[500px] px-15 gap-6">
-          <p>
-            <FaFacebook />
+      <div className="flex">
+        <div className="flex py-2 text-md items-center bg-[#1C385A] text-white max-w-[500px] md:px-12 px-4 w-fit md:w-full gap-2.5 md:gap-6">
+          <p >
+            <FaFacebook className="md:w-7 md:h-7 w-3.5 h-3.5" />
           </p>
-          <p>
-            <BsTwitterX />
+          <p >
+            <BsTwitterX className="md:w-7 md:h-7 w-3.5 h-3.5" />
           </p>
-          <p>
-            <FiInstagram />
+          <p >
+            <FiInstagram className="md:w-7 md:h-7 w-3.5 h-3.5" />
           </p>
-          <p>
-            <FaLinkedinIn />
+          <p >
+            <FaLinkedinIn className="md:w-7 md:h-7 w-3.5 h-3.5" />
           </p>
-          <p>
-            <GrYoutube />
+          <p >
+            <GrYoutube className="md:w-7 md:h-7 w-3.5 h-3.5" />
           </p>
         </div>
-        <div className="py-2 gap-6 bg-blue-200 flex items-center w-full">
-          <div className="flex items-center gap-1">
-            <div>
+        <div className="py-2 md:space-x-6 space-y-2 md:px-5 px-2 bg-[#D3E9FF] flex items-center flex-col sm:flex-row justify-center sm:justify-start md:gap-4 w-full">
+          <div className="flex items-center gap-1 m-0">
+            <div className="text-black font-bold">
               <PiPhoneIncomingThin />
             </div>
-            <p>+2349055348554</p>
+            <p className="text-[#111111] font-medium poppins text-xs md:text-base">+2349055348554</p>
           </div>
           <div className="flex items-center gap-2">
-            <div>
+            <div className="text-black">
               <PiEnvelopeSimpleThin />
             </div>
-            <p>contact@ephadintlacademy.com</p>
+            <p className="text-[#111111] font-medium poppins text-xs md:text-base">contact@ephadintlacademy.com</p>
           </div>
         </div>
       </div>
+      {/* laptop view */}
       <div className="flex justify-between items-center px-8">
         <div>
-          <Image src={emslogo} alt="" className="w-[156px] h-[130px]" />
+          <Image src={emslogo} alt="EMS Logo" className="h-18 w-18" />
         </div>
-        <ul className="flex gap-4 font-bold text-[20px] px-20">
-          <li>HOME</li>
-          <Link href="/Academics"><li>ACADEMICS</li></Link>
-          <Link href="/Admission"><li>ADMISSIONS</li></Link>
-          <li>ABOUT US</li>
-          <li>CONTACT</li>
+        {/* Desktop Menu */}
+        <ul className="hidden md:flex gap-4 font-bold text-[20px] px-20">
+          <Link href="/">
+            <li className="roboto text-[#111111]">HOME</li>
+          </Link>
+          <Link href="/Academics">
+            <li className="roboto text-[#111111]">ACADEMICS</li>
+          </Link>
+          <Link href="/Admission">
+            <li className="roboto text-[#111111]">ADMISSIONS</li>
+          </Link>
+          <li className="roboto text-[#111111]">ABOUT US</li>
+          <li className="roboto text-[#111111]">CONTACT</li>
+        </ul>
+        {/* Hamburger Icon for Mobile */}
+        <div className="md:hidden">
+          <button onClick={toggleMenu} aria-label="Toggle Menu">
+            {isMenuOpen ? null : <HiMenu size={30} />}
+          </button>
+        </div>
+      </div>
+      {/* Mobile Menu */}
+      <div
+        className={`md:hidden fixed left-0 right-0 z-90 bg-[#1C385A] text-white transition-all duration-300 ease-in-out overflow-hidden ${
+          isMenuOpen ? "h-[40vh] top-0" : "h-0 top-[-100%]"
+        }`}
+      >
+        {/* Close Button (X) at Top Right */}
+        {isMenuOpen && (
+          <button
+            onClick={toggleMenu}
+            className="absolute top-4 right-4 text-white"
+            aria-label="Close Menu"
+          >
+            <HiX size={30} />
+          </button>
+        )}
+        <ul className="flex flex-col items-center justify-center h-full gap-6 text-2xl font-bold roboto p-6">
+          <Link href="/" onClick={toggleMenu}>
+            <li>HOME</li>
+          </Link>
+          <Link href="/Academics" onClick={toggleMenu}>
+            <li>ACADEMICS</li>
+          </Link>
+          <Link href="/Admission" onClick={toggleMenu}>
+            <li>ADMISSIONS</li>
+          </Link>
+          <li onClick={toggleMenu}>ABOUT US</li>
+          <li onClick={toggleMenu}>CONTACT</li>
         </ul>
       </div>
     </div>
