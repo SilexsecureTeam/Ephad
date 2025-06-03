@@ -135,7 +135,7 @@ function Page() {
               src={PrincipalTwo}
               alt=""
               className="bottom-12 right-[70px] hidden md:block absolute w-[200px]  h-[140px] border-6 border-white lg:right-[-70px] md:right-0"
-            />
+            />  
           </div>
           <div className="relative w-full lg:w-1/2 py-7 flex flex-col justify-center h-full">
             <p className="text-[36px] w-full roboto font-light pb-2">

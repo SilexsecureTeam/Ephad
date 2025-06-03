@@ -6,7 +6,7 @@ import { FaPuzzlePiece } from "react-icons/fa6";
 import { HiPaintBrush } from "react-icons/hi2";
 import { IoSunnySharp } from "react-icons/io5";
 import { GoStarFill } from "react-icons/go";
-import Library from "../../public/assets/library.jpg"
+// import Library from "../../public/assets/library.jpg"
 import LanguageArt from "../../public/assets/LanguageArt.png";
 import Mathematics from "../../public/assets/Mathematics.png";
 import Science from "../../public/assets/Science.png";
@@ -19,10 +19,10 @@ import Classroom from  "../../public/assets/classroom.png"
 
 function page() {
   return (
-    <div className="pt-30">
+    <div className="pt-30 lg:px-20 w-full">
       <div className="grid items-center justify-center w-full text-center">
-        <h1 className="text-[58px] font-bold">Our Special Features</h1>
-        <p className="text-[20px] w-[1000px]">
+        <h1 className="font-semibold roboto text-[36px] text-[#111111] py-3">Our Special Features</h1>
+        <p className="text-[16px] md:w-[55%] mx-auto roboto font-normal pb-2">
           Our kinder garden school provides a nurturing and stimulating
           environment, fostering a love for learning that lasts a lifetime. Join
           us as we embark on an exciting educational journey together!
@@ -31,35 +31,35 @@ function page() {
 
       <div className="flex py-30 justify-center items-center w-full">
         <div>
-          <div className="grid grid-cols-3  gap-6  ">
-            <div className="relative border-2 border-black shadow-lg w-[400px] shadow-black py-10 px-10 rounded-xl">
-              <div className="absolute top-[-34px] text-3xl bg-cyan-100 border rounded-md py-4 px-4">
+          <div className="grid grid-cols-3  gap-6 ">
+            <div className="relative border-1 border-black shadow-lg w-[400px] shadow-black py-10 px-10 rounded-xl">
+              <div className="absolute top-[-34px] text-3xl bg-[#E3EBFF] border rounded-md py-4 px-4">
                 <FaBookOpen />
               </div>
-              <h1 className="font-bold py-2">Thematic Learning</h1>
-              <p>
+              <h1 className="font-semibold roboto text-[18px] py-2">Thematic Learning</h1>
+              <p className="text-base pt-3 font-normal">
                 Our curriculum is centered around engaging themes that capture
                 children's imaginations. Each theme integrates multiple
                 subjects, making learning enjoyable and relevant.
               </p>
             </div>
-            <div className="relative border-2 border-black shadow-lg w-[400px] py-10 px-10 shadow-black rounded-xl">
-              <div className="absolute top-[-34px] text-3xl bg-cyan-100 border rounded-md py-4 px-4">
+            <div className="relative border-1 border-black shadow-lg w-[400px] py-10 px-10 shadow-black rounded-xl">
+              <div className="absolute top-[-34px] text-3xl bg-[#E3EBFF] border rounded-md py-4 px-4">
                 <GiNetworkBars />
               </div>
-              <h1 className="font-bold py-2">STEAM Education</h1>
-              <p>
+              <h1 className="font-semibold roboto text-[18px] py-2">STEAM Education</h1>
+              <p className="text-base pt-3 font-normal">
                 We offer innovative STEAM (Science, Technology, Engineering,
                 Arts, and Mathematics) programs that promote hands-on
                 exploration, critical thinking, and problem-solving skills.
               </p>
             </div>
-            <div className="relative border-2 border-black shadow-lg w-[400px] py-10 px-10 shadow-black rounded-xl">
-              <div className="absolute top-[-34px] text-3xl bg-cyan-100 border rounded-md py-4 px-4">
+            <div className="relative border-1 border-black shadow-lg w-[400px] py-10 px-10 shadow-black rounded-xl">
+              <div className="absolute top-[-34px] text-3xl bg-[#E3EBFF] border rounded-md py-4 px-4">
                 <FaPuzzlePiece />
               </div>
-              <h1 className="font-bold py-2">Language Immersion</h1>
-              <p>
+              <h1 className="font-semibold roboto text-[18px] py-2">Language Immersion</h1>
+              <p className="text-base pt-3 font-normal">
                 Through language immersion programs, children have the
                 opportunity to learn a second language, enhancing cognitive
                 development and global awareness.
@@ -67,34 +67,34 @@ function page() {
             </div>
           </div>
           <div className="grid grid-cols-3 my-14 gap-6  ">
-            <div className="relative border-2  border-black shadow-lg w-[400px] py-10 px-10 shadow-black rounded-xl">
-              <div className="absolute top-[-34px] text-3xl bg-cyan-100 border rounded-md py-4 px-4">
+            <div className="relative border-1  border-black shadow-lg w-[400px] py-10 px-10 shadow-black rounded-xl">
+              <div className="absolute top-[-34px] text-3xl bg-[#E3EBFF] border rounded-md py-4 px-4">
                 <HiPaintBrush />
               </div>
-              <h1 className="font-bold py-2">Act and Creativity</h1>
-              <p>
+              <h1 className="font-semibold roboto text-[18px] py-2">Act and Creativity</h1>
+              <p className="text-base pt-3 font-normal">
                 Art is celebrated at Little Learners Academy. Our art-focused
                 activities encourage self-expression, creativity, and the
                 appreciation of various art forms.
               </p>
             </div>
-            <div className="relative border-2 border-black shadow-lg w-[400px] py-10 px-10 shadow-black rounded-xl">
-              <div className="absolute top-[-34px] text-3xl bg-cyan-100 border rounded-md py-4 px-4">
+            <div className="relative border-1 border-black shadow-lg w-[400px] py-10 px-10 shadow-black rounded-xl">
+              <div className="absolute top-[-34px] text-3xl bg-[#E3EBFF] border rounded-md py-4 px-4">
                 <IoSunnySharp />
               </div>
-              <h1 className="font-bold py-2">Outdoor Education</h1>
-              <p>
+              <h1 className="font-semibold roboto text-[18px] py-2">Outdoor Education</h1>
+              <p className="text-base pt-3 font-normal">
                 Our expansive outdoor learning spaces provide a stimulating
                 environment for children to explore nature, fostering a
                 connection with the environment.
               </p>
             </div>
-            <div className="relative border-2 border-black shadow-lg w-[400px] py-10 px-10 shadow-black rounded-xl">
-              <div className="absolute top-[-34px] text-3xl bg-cyan-100 border rounded-md py-4 px-4">
+            <div className="relative border-1 border-black shadow-lg w-[400px] py-10 px-10 shadow-black rounded-xl">
+              <div className="absolute top-[-34px] text-3xl bg-[#E3EBFF] border rounded-md py-4 px-4">
                 <GoStarFill />
               </div>
-              <h1 className="font-bold py-2">Play-Based Learning</h1>
-              <p>
+              <h1 className="font-semibold roboto text-[18px] py-2">Play-Based Learning</h1>
+              <p className="text-base pt-3 font-normal">
                 Play is an integral part of early childhood education. Our
                 play-based approach enhances social skills, emotional
                 development, and imaginative thinking.
@@ -106,9 +106,9 @@ function page() {
 
       <div>
         <div className="grid items-center justify-center w-full text-center">
-          <h1 className="font-bold text-[40px]">Our Features</h1>
-          <h1 className="text-[58px] ">What Student Learn</h1>
-          <p className="text-[24px] w-[1000px]">
+          <h1 className="font-semibold text-[28px] ">Our Features</h1>
+          <h1 className="font-medium roboto text-[36px] text-[#111111] py-3">What Student Learn</h1>
+          <p className="text-[18px] font-normal mx-auto w-[70%]">
             At Little Learners Academy, we strive to cultivate a love for
             learning and equip children with essential skills for their future
             success. Our academic programs cover a wide range of subjects,
@@ -122,7 +122,7 @@ function page() {
               <div className="relative border-2 border-black shadow-lg w-[500px]  h-[580px] shadow-black py-10 px-10 rounded-xl">
                 <div className="w-full  flex justify-center ">
                   <div className="absolute w-[125px] h-[384px] top-0 text-3xl bg-blue-100 border rounded-b-md -z-10"></div>
-                </div>
+                </div> 
                 <Image
                   src={LanguageArt}
                   alt=""

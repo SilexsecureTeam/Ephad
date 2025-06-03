@@ -6,8 +6,8 @@ import { Poppins, Roboto } from 'next/font/google';
 
 // Configure Poppins
 const poppins = Poppins({
-  weight: ['300', '400', '500', '600', '700'],
-  subsets: ['latin'],
+ subsets: ['latin'],
+  weight: ['400', '700'], // Add required weights
   display: 'swap',
 });
 
@@ -20,7 +20,9 @@ const roboto = Roboto({
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={poppins.className}>
+    <html lang="en" 
+    className={poppins.className}
+    >
       <body >
         <Navbar />
         <Home/>

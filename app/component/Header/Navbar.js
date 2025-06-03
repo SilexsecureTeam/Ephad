@@ -22,22 +22,26 @@ function Navbar() {
   return (
     <div>
       <div className="flex">
-        <div className="flex py-2 text-md items-center bg-[#1C385A] text-white max-w-[500px] md:px-12 px-4 w-fit md:w-full gap-2.5 md:gap-6">
+        <div className="flex flex-col sm:flex-row py-2 text-md items-center bg-[#1C385A] text-white max-w-[500px] md:px-12 px-4 w-fit md:w-full space-x-2.5 sm:space-x-6 space-y-2 sm:space-y-0">
+          <div className="flex items-center space-x-2.5 sm:space-x-6">
           <p >
-            <FaFacebook className="md:w-7 md:h-7 w-3.5 h-3.5" />
+            <FaFacebook className="md:w-5 md:h-5 w-2.5 h-2.5" />
           </p>
           <p >
-            <BsTwitterX className="md:w-7 md:h-7 w-3.5 h-3.5" />
+            <BsTwitterX className="md:w-5 md:h-5 w-2.5 h-2.5" />
+          </p>
+          </div>
+          <div className="flex items-center space-x-2.5 sm:space-x-6">
+          <p >
+            <FiInstagram className="md:w-5 md:h-5 w-2.5 h-2.5" />
           </p>
           <p >
-            <FiInstagram className="md:w-7 md:h-7 w-3.5 h-3.5" />
+            <FaLinkedinIn className="md:w-5 md:h-5 w-2.5 h-2.5" />
           </p>
           <p >
-            <FaLinkedinIn className="md:w-7 md:h-7 w-3.5 h-3.5" />
+            <GrYoutube className="md:w-5 md:h-5 w-2.5 h-2.5" />
           </p>
-          <p >
-            <GrYoutube className="md:w-7 md:h-7 w-3.5 h-3.5" />
-          </p>
+          </div>
         </div>
         <div className="py-2 md:space-x-6 space-y-2 md:px-5 px-2 bg-[#D3E9FF] flex items-center flex-col sm:flex-row justify-center sm:justify-start md:gap-4 w-full">
           <div className="flex items-center gap-1 m-0">
@@ -60,7 +64,7 @@ function Navbar() {
           <Image src={emslogo} alt="EMS Logo" className="h-18 w-18" />
         </div>
         {/* Desktop Menu */}
-        <ul className="hidden md:flex gap-4 font-bold text-[20px] px-20">
+        <ul className="hidden md:flex gap-4 font-medium text-[18px] px-20">
           <Link href="/">
             <li className="roboto text-[#111111]">HOME</li>
           </Link>
@@ -96,7 +100,7 @@ function Navbar() {
             <HiX size={30} />
           </button>
         )}
-        <ul className="flex flex-col items-center justify-center h-full gap-6 text-2xl font-bold roboto p-6">
+        <ul className="flex flex-col items-center justify-center text-[18px] h-full gap-6 font-bold roboto p-6">
           <Link href="/" onClick={toggleMenu}>
             <li>HOME</li>
           </Link>
