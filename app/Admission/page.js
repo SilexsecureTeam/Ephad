@@ -85,7 +85,7 @@ function Page() {
         </p>
       </div>
 
-      <div className="px-4 sm:px-6 py-4 mx-auto w-full border rounded-xl">
+      <div className="px-4 sm:px-6 py-4 mx-auto w-full border border-r-4 border-b-4 rounded-xl">
         <div className="overflow-x-auto w-full py-3">
           <table className="w-full min-w-[800px]">
             <thead>
@@ -114,7 +114,7 @@ function Page() {
         </div>
       </div>
 
-      <div className="px-4 sm:px-6 my-16 mx-auto w-full border rounded-xl">
+      <div className="px-4 sm:px-6 my-16 mx-auto w-full border border-r-4 border-b-4 rounded-xl">
         <div className="overflow-x-auto w-full py-6">
           <table className="w-full min-w-[600px]">
             <thead>

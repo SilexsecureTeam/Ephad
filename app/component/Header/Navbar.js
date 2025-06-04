@@ -74,7 +74,9 @@ function Navbar() {
           <Link href="/Admission">
             <li className="roboto text-[#111111]">ADMISSIONS</li>
           </Link>
-          <li className="roboto text-[#111111]">ABOUT US</li>
+          <Link href="/About">
+            <li className="roboto text-[#111111]">ABOUT US</li>
+          </Link>
           <li className="roboto text-[#111111]">CONTACT</li>
         </ul>
         {/* Hamburger Icon for Mobile */}
@@ -110,7 +112,9 @@ function Navbar() {
           <Link href="/Admission" onClick={toggleMenu}>
             <li>ADMISSIONS</li>
           </Link>
-          <li onClick={toggleMenu}>ABOUT US</li>
+          <Link href="/About" onClick={toggleMenu}>
+            <li>ABOUTt US</li>
+          </Link>
           <li onClick={toggleMenu}>CONTACT</li>
         </ul>
       </div>
