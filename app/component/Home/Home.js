@@ -59,7 +59,7 @@ function Home() {
         </div>
       </div>
 
-      <div className='absolute -bottom-2 right-0 w-full flex flex-wrap justify-end text-white text-[12px] sm:text-base md:text-lg lg:text-xl'>
+      <div className='absolute z-30 -bottom-2 right-0 w-full flex flex-wrap justify-end text-white text-[12px] sm:text-base md:text-lg lg:text-xl'>
         <div className='bg-[#FBB911] w-fit roboto py-2 px-4 text-black text-center'>
           Career-Oriented Curriculum
         </div>
