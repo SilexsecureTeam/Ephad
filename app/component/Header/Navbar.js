@@ -77,7 +77,9 @@ function Navbar() {
           <Link href="/About">
             <li className="roboto text-[#111111]">ABOUT US</li>
           </Link>
-          <li className="roboto text-[#111111]">CONTACT</li>
+          <Link href="/Contact">
+            <li className="roboto text-[#111111]">CONTACT</li>
+          </Link>
         </ul>
         {/* Hamburger Icon for Mobile */}
         <div className="md:hidden">
@@ -115,7 +117,9 @@ function Navbar() {
           <Link href="/About" onClick={toggleMenu}>
             <li>ABOUTt US</li>
           </Link>
-          <li onClick={toggleMenu}>CONTACT</li>
+          <Link href="/Contact" onClick={toggleMenu}>
+            <li>CONTACT </li>
+          </Link>
         </ul>
       </div>
     </div>

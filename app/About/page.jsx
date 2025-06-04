@@ -11,7 +11,7 @@ import dir from "../../public/assets/dir.png";
 function Page() {
   return (
     <div
-      className={`roboto w-full z-0 px-4 sm:px-6 md:px-10 lg:px-20 py-8 bg-white`}
+      className={`roboto w-full z-0 px-4 sm:px-6 md:px-10 lg:px-20 pt-8 pb-20 bg-white`}
     >
       {/* Hero Section */}
       <section className="grid items-center justify-center pt-10  pb-4 w-full text-center">

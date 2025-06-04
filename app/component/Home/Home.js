@@ -60,13 +60,13 @@ function Home() {
       </div>
 
       <div className='absolute z-30 -bottom-2 right-0 w-full flex flex-wrap justify-end text-white text-[12px] sm:text-base md:text-lg lg:text-xl'>
-        <div className='bg-[#FBB911] w-fit roboto py-2 px-4 text-black text-center'>
+        <div className='bg-[#FBB911] z-30 w-fit roboto py-2 px-4 text-black text-center'>
           Career-Oriented Curriculum
         </div>
-        <div className='bg-[#5B7BCE] w-fit roboto py-2 px-4 text-center'>
+        <div className='bg-[#5B7BCE] z-30 w-fit roboto py-2 px-4 text-center'>
           Skills for Professional Success
         </div>
-        <div className='bg-[#1C385A] w-fit roboto py-2 px-4 text-center'>
+        <div className='bg-[#1C385A] z-30 w-fit roboto py-2 px-4 text-center'>
           Supportive Environment
         </div>
       </div>
