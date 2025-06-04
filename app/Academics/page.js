@@ -177,7 +177,7 @@ function Page() {
         {features.map((feature, index) => (
           <div
             key={index}
-            className="relative border border-black shadow-lg shadow-black rounded-xl p-6 md:p-8 w-full max-w-[400px] mx-auto transition-transform hover:scale-105"
+            className="relative border-2 border-r-5 border-b-5 border-black   rounded-xl p-6 md:p-8 w-full max-w-[400px] mx-auto transition-transform hover:scale-105"
             role="region"
             aria-label={feature.title}
           >
@@ -213,7 +213,7 @@ function Page() {
         {subjects.map((subject, index) => (
           <div
             key={index}
-            className="relative border-2 border-black shadow-lg shadow-black rounded-xl p-6 sm:p-8 w-full max-w-[500px] mx-auto h-fit transition-transform hover:scale-105"
+            className="relative  border-2 border-r-5 border-b-5 border-black rounded-xl p-6 sm:p-8 w-full max-w-[500px] mx-auto h-fit transition-transform hover:scale-105"
             role="region"
             aria-label={subject.title}
           >
@@ -272,7 +272,7 @@ function Page() {
     role="region"
     aria-label={section.title}
   >
-    <div className="relative border-2 border-black shadow-lg shadow-black rounded-xl w-full h-auto py-8 md:py-10">
+    <div className="relative  border-2 border-r-5 border-b-5 border-black rounded-xl w-full h-auto py-8 md:py-10">
       <div className="relative overflow-hidden h-[200px] sm:h-[250px] md:h-[250px]">
         {/* Slider Images */}
         <div className="relative w-full h-full">

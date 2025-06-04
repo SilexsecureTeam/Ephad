@@ -176,9 +176,9 @@ const ContactForm = () => {
                 className="w-full border border-gray-400 bg-[#FFFCFA] outline-gray-600 px-3 py-2 rounded-md"
               >
                 <option value="">Select Program</option>
-                <option value="Montessori">Montessori</option>
-                <option value="Early Learners">Early Learners</option>
-                <option value="STEM Kids">STEM Kids</option>
+                <option value="Montessori">Science</option>
+                <option value="Early Learners">Science</option>
+                <option value="STEM Kids">Science</option>
               </select>
               {errors.program && <p className="text-red-500 text-sm">{errors.program}</p>}
             </div>
