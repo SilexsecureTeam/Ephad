@@ -21,17 +21,17 @@ function Navbar() {
 
   return (
     <div>
-      <div className="flex">
-        <div className="flex flex-col sm:flex-row py-2 text-md items-center bg-[#1C385A] text-white max-w-[500px] md:px-12 px-4 w-fit md:w-full space-x-2.5 sm:space-x-6 space-y-2 sm:space-y-0">
-          <div className="flex items-center space-x-2.5 sm:space-x-6">
+      <div className="flex flex-col md:flex-row">
+        <div className="flex  justify-center py-2 text-md items-center bg-[#1C385A] text-white text-center md:max-w-[500px] md:px-12 px-4 w-full space-x-2.5 sm:space-x-4 sm:space-y-0">
+          {/* <div className="flex items-center space-x-2.5 sm:space-x-6"> */}
           <p >
             <FaFacebook className="md:w-5 md:h-5 w-2.5 h-2.5" />
           </p>
           <p >
             <BsTwitterX className="md:w-5 md:h-5 w-2.5 h-2.5" />
           </p>
-          </div>
-          <div className="flex items-center space-x-2.5 sm:space-x-6">
+          {/* </div> */}
+          {/* <div className="flex items-center space-x-2.5 sm:space-x-6"> */}
           <p >
             <FiInstagram className="md:w-5 md:h-5 w-2.5 h-2.5" />
           </p>
@@ -41,9 +41,9 @@ function Navbar() {
           <p >
             <GrYoutube className="md:w-5 md:h-5 w-2.5 h-2.5" />
           </p>
-          </div>
+          {/* </div> */}
         </div>
-        <div className="py-2 md:space-x-6 space-y-2 md:px-5 px-2 bg-[#D3E9FF] flex items-center flex-col sm:flex-row justify-center sm:justify-start md:gap-4 w-full">
+        <div className="py-2 md:space-x-6 space-y-2 md:px-5 px-2 bg-[#D3E9FF] flex items-center justify-center sm:justify-start md:gap-4 w-full">
           <div className="flex items-center gap-1 m-0">
             <div className="text-black font-bold">
               <PiPhoneIncomingThin />

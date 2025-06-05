@@ -1,7 +1,10 @@
 import React from "react";
+import Homes from "../component/Homes/Homes";
 
 function Page() {
   return (
+    <div>
+      <Homes />
     <div className="w-full z-0 px-4 sm:px-6 md:px-10 lg:px-20 py-8 bg-white">
       <div className="grid items-center justify-center pt-20 pb-10 w-full text-center px-4">
         <h1 className="font-semibold roboto text-2xl sm:text-3xl md:text-[36px] text-[#111111] py-3">
@@ -139,6 +142,7 @@ function Page() {
         </div>
       </div>
     </div>
+</div>
   );
 }
 

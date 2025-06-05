@@ -4,7 +4,7 @@ import Image from "next/image";
 import Health from "../public/assets/Health&Science.jpg";
 import History from "../public/assets/History.jpg";
 import Buisness from "../public/assets/Business.jpg";
-import Principal from "../public/assets/Principal.jpg";
+import Principal from "../public/assets/dir.png";
 import PrincipalTwo from "../public/assets/mancalling.jpg";
 import Signature from "../public/assets/J.png";
 import Anita from "../public/assets/Anita.jpg";
@@ -18,6 +18,7 @@ import Chatroom from "../public/assets/chatroom.jpg";
 import Itroom from "../public/assets/itroom.jpg";
 import SchoolBuilding from "../public/assets/schoolbuilding.jpg";
 import { FaRegCalendarPlus } from "react-icons/fa6";
+import Home from "./component/Home/Home";
 
 const events = [
   { day: '16', month: 'May', title: 'Interim Marks Posted', date: '16 May 25', color: 'bg-teal-300' },
@@ -70,13 +71,14 @@ function Page() {
 
   return (
     <>
+    <Home />
       <div className="pb-30">
         {/* First Section */}
         <section className="relative bg-[#E3EBFF] min-h-[900px] px-4 sm:px-15 md:px-20 lg:px-35">
           <div className="flex flex-col lg:flex-row justify-center gap-10 py-20 text-[19px] min-h-[400px] sm:min-h-[500px] lg:min-h-[600px]">
   <div className="grid gap-6 w-full lg:w-[600px] h-full">
     <div className="flex flex-col sm:flex-row gap-6">
-      <div className="flex items-center my-4 justify-center h-25 w-1/5 sm:w-[400px] text-2xl sm:text-4xl border border-[#111111] rounded-[50%]">
+      <div className="flex items-center my-4 justify-center md:h-25 h-14 w-14 md:w-[400px] text-2xl sm:text-4xl border border-[#111111] rounded-[50%]">
         <LiaCheckSolid />
       </div>
       <div>
@@ -87,7 +89,7 @@ function Page() {
       </div>
     </div>
     <div className="flex flex-col sm:flex-row gap-6">
-      <div className="flex items-center h-25 my-4 w-1/5 sm:w-[400px] justify-center text-2xl sm:text-4xl border border-black rounded-[50%]">
+      <div className="flex items-center md:h-25 h-14 w-14 mt-4  md:w-[400px] justify-center text-2xl sm:text-4xl border border-black rounded-[50%]">
         <LiaCheckSolid />
       </div>
       <div className="">

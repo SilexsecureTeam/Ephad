@@ -21,7 +21,7 @@ const Home = () => {
   }, [images.length]);
 
   return (
-    <div className="relative w-full h-[50vh] z-0 md:h-[83vh] mb-2 overflow-hidden">
+    <div className="relative w-full h-[60vh] z-0 md:h-[83vh] mb-2 overflow-hidden">
       {images.map((image, index) => {
         // Determine the transform class based on the slide's state
         let transformClass = "";
