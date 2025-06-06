@@ -115,7 +115,7 @@ function Navbar() {
             <li>ADMISSIONS</li>
           </Link>
           <Link href="/About" onClick={toggleMenu}>
-            <li>ABOUTt US</li>
+            <li>ABOUT US</li>
           </Link>
           <Link href="/Contact" onClick={toggleMenu}>
             <li>CONTACT </li>

@@ -5,7 +5,7 @@ import Health from "../public/assets/Health&Science.jpg";
 import History from "../public/assets/History.jpg";
 import Buisness from "../public/assets/Business.jpg";
 import Principal from "../public/assets/dir.png";
-import PrincipalTwo from "../public/assets/mancalling.jpg";
+// import PrincipalTwo from "../public/assets/mancalling.jpg";
 import Signature from "../public/assets/J.png";
 import Anita from "../public/assets/Anita.jpg";
 import Bruce from "../public/assets/Bruce.jpg";
@@ -133,18 +133,18 @@ function Page() {
         <section className="relative flex flex-col lg:flex-row items-stretch gap-20 justify-between px-4 sm:px-21 md:px-26 lg:px-41 xl:px-51 w-full pt-50">
           <div className="relative w-full lg:w-1/2 md:h-[500px]">
             <Image src={Principal} alt="" className="w-full h-full object-cover" />
-            <Image
+            {/* <Image
               src={PrincipalTwo}
               alt=""
               className="bottom-12 right-[70px] hidden md:block absolute w-[200px]  h-[140px] border-6 border-white lg:right-[-70px] md:right-0"
-            />  
+            />   */}
           </div>
           <div className="relative w-full lg:w-1/2 py-7 flex flex-col justify-center h-full">
             <p className="text-[36px] w-full roboto font-light pb-2">
               At our School, we aim to empower students with the skills, knowledge, and values needed for success in a global context.
             </p>
-            <p className="font-bold roboto text-[24px] py-2">Joseph Panua</p>
-            <p className="text-[24px] roboto font-medium">Principal</p>
+            <p className="font-bold roboto text-[24px] py-2">Kate Unyime Ibekwe</p>
+            <p className="text-[24px] roboto font-medium">Proprietress/CEO</p>
             <div className="absolute right-0 md:right-40 bottom-[46px]">
               <Image src={Signature} alt="" className="w-[90px]" />
             </div>
