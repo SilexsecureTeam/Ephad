@@ -13,18 +13,29 @@ import { GoStarFill } from 'react-icons/go';
 
 import LanguageArt from '../../public/assets/LanguageArt.png';
 import Mathematics from '../../public/assets/Mathematics.png';
-import Science from '../../public/assets/Science.png';
+import Science from '../../public/assets/course4.jpg';
 import SocialStudies from '../../public/assets/SocialStudies.png';
-import ArtandCraft from '../../public/assets/ArtandCraft.png';
-import PhysicalEducation from '../../public/assets/PhysicalEducation.png';
+import ArtandCraft from '../../public/assets/course2.jpg';
+import PhysicalEducation from '../../public/assets/course3.jpg';
 import Classroom from '../../public/assets/classroom.png';
+import Creche from '../../public/assets/creche.jpg';
+import Creche1 from '../../public/assets/creche1.jpg';
+import Creche2 from '../../public/assets/creche2.jpg';
+import Creche3 from '../../public/assets/creche3.jpg';
+import Creche4 from '../../public/assets/creche4.jpg';
+import Creche5 from '../../public/assets/course1.jpg';
+import Creche6 from '../../public/assets/course2.jpg';
+import Creche7 from '../../public/assets/course3.jpg';
+import Creche8 from '../../public/assets/course4.jpg';
+import Creche9 from '../../public/assets/hero1.jpg';
+import Creche10 from '../../public/assets/hero3.jpg';
 import Homes from '../component/Homes/Homes';
 
 // Define carouselData with all required fields
 const carouselData = [
   {
     id: 1,
-    images: [Classroom, SocialStudies, Classroom, SocialStudies, Classroom, SocialStudies],
+    images: [Classroom, Creche, Creche1, Creche10, Classroom, Creche7],
     title: 'Crèche: ',
     titles: ' Age Group 3 months to 3 years',
     highlights: [
@@ -41,7 +52,7 @@ const carouselData = [
   },
   {
     id: 2,
-    images: [Classroom, SocialStudies, Classroom, SocialStudies, Classroom, SocialStudies],
+    images: [Creche2, Creche3, Creche4, SocialStudies, Mathematics, LanguageArt],
     title: 'Primary School: ',
     titles: ' Age Group 4 to 11 years',
     curriculums: [
@@ -63,7 +74,7 @@ const carouselData = [
   },
   {
     id: 3,
-    images: [Classroom, SocialStudies, Classroom, SocialStudies, Classroom, SocialStudies],
+    images: [Creche5, Creche6, Creche10, Creche9, Creche8, SocialStudies],
     title: 'Secondary School: ',
     titles: ' Age Group 12 to 18 years',
   curriculums: [
@@ -325,7 +336,7 @@ function Page() {
             alt={`${carouselData[0].title} image ${idx + 1}`}
             width={300}
             height={200}
-            className="object-cover rounded"
+            className="object-cover rounded h-50"
           />
         </div>
       ))}
@@ -411,7 +422,7 @@ function Page() {
             alt={`${carouselData[1].title} image ${idx + 1}`}
             width={300}
             height={200}
-            className="object-cover rounded"
+            className="object-cover rounded h-50"
           />
         </div>
       ))}
@@ -507,7 +518,7 @@ function Page() {
             alt={`${carouselData[2].title} image ${idx + 1}`}
             width={300}
             height={200}
-            className="object-cover rounded"
+            className="object-cover rounded h-50"
           />
         </div>
       ))}

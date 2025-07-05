@@ -1,22 +1,22 @@
 'use client';
 import React, { useState } from "react";
 import Image from "next/image";
-import Health from "../public/assets/Health&Science.jpg";
-import History from "../public/assets/History.jpg";
-import Buisness from "../public/assets/Business.jpg";
+import Health from "../public/assets/course1.jpg";
+import History from "../public/assets/course3.jpg";
+import Buisness from "../public/assets/course2.jpg";
 import Principal from "../public/assets/dir.png";
 // import PrincipalTwo from "../public/assets/mancalling.jpg";
 import Signature from "../public/assets/J.png";
-import Anita from "../public/assets/Anita.jpg";
-import Bruce from "../public/assets/Bruce.jpg";
-import Jack from "../public/assets/Jack.jpg";
-import Calvin from "../public/assets/Calvin.jpg";
-import Anitalee from "../public/assets/Anitalee.jpg";
+import Anita from "../public/assets/team1.jpg";
+import Bruce from "../public/assets/team2.jpg";
+import Jack from "../public/assets/team3.jpg";
+import Calvin from "../public/assets/team4.jpg";
+import Anitalee from "../public/assets/team5.jpg";
 import { LiaCheckSolid } from "react-icons/lia";
-import Library from "../public/assets/library.jpg";
-import Chatroom from "../public/assets/chatroom.jpg";
-import Itroom from "../public/assets/itroom.jpg";
-import SchoolBuilding from "../public/assets/schoolbuilding.jpg";
+import Library from "../public/assets/hero2.jpg";
+import Chatroom from "../public/assets/course3.jpg";
+import Itroom from "../public/assets/hero1.jpg";
+import SchoolBuilding from "../public/assets/hero2.png";
 import { FaRegCalendarPlus } from "react-icons/fa6";
 import Home from "./component/Home/Home";
 
@@ -154,7 +154,7 @@ function Page() {
         {/* Educators Section */}
         <section className="w-full grid justify-center items-center text-[24px] px-4 sm:px-15 md:px-20 lg:px-35 pt-40 text-center text-white">
           <h1 className="font-semibold text-[28px] text-[#111111] py-8">Meet our teams of dedicated educators</h1>
-          <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-5 gap-4 text-[14px]">
+          <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-5 text-[14px]">
             <div>
               <Image src={Anita} alt="" className="w-full h-[200px] sm:h-[250px] lg:h-[300px] object-cover" />
               <div className="flex justify-between text-[14px] bg-[#1D157C] w-full py-2 px-4">

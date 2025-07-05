@@ -5,6 +5,7 @@ import { FaFacebookF, FaTwitter, FaLinkedinIn } from 'react-icons/fa';
 import Image from 'next/image';
 import call from '../../public/assets/call.png';
 import geo from '../../public/assets/geo.png';
+import Ho from "../component/Ho/Ho";
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -48,7 +49,9 @@ const ContactForm = () => {
   };
 
   return (
-    <div className='w-full z-0 px-4 sm:px-6 md:px-10 lg:px-20 py-8 pb-20 bg-white'>
+    <div>
+      <Ho />
+      <div className='w-full z-0 px-4 sm:px-6 md:px-10 lg:px-20 py-8 pb-20 bg-white'>
         <div className="flex flex-col md:flex-row w-full space-x-10 space-y-7 justify-between mb-6">
         {/* Enquiry Section */}
         <div className="bg-white  border h-fit border-gray-500 w-full p-4 md:px-8 rounded-lg">
@@ -207,6 +210,8 @@ const ContactForm = () => {
       )}
     </div>
     </div>
+    </div>
+    
   );
 };
 

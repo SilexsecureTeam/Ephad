@@ -2,9 +2,9 @@
 
 import { useEffect, useState } from "react";
 import Image from "next/image";
-import HomeImg from "../../../public/assets/HomeImg.png";
-import HomeImg1 from "../../../public/assets/on.jpg";
-import HomeImg2 from "../../../public/assets/one.jpg";
+import HomeImg from "../../../public/assets/hero1.jpg";
+import HomeImg1 from "../../../public/assets/hero2.png";
+import HomeImg2 from "../../../public/assets/hero3.jpg";
 
 const Home = () => {
   // Array of image URLs

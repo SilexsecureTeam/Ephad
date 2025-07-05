@@ -4,7 +4,7 @@ import Image from "next/image";
 import Icon from "../../public/assets/Icon.png";
 import IconOne from "../../public/assets/Icon (1).png";
 import dir from "../../public/assets/dir.png";
-import Homes from "../component/Homes/Homes";
+import Hom from "../component/Hom/Hom";
 
 // const outfit = Outfit({ subsets: ["latin"] });
 // const raleway = Raleway({ subsets: ["latin"] });
@@ -12,7 +12,7 @@ import Homes from "../component/Homes/Homes";
 function Page() {
   return (
     <div>
-      <Homes />
+      <Hom />
       <div
         className={`roboto w-full z-0 px-4 sm:px-6 md:px-10 lg:px-20 pt-8 pb-20 bg-white`}
       >
