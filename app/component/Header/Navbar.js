@@ -48,7 +48,7 @@ function Navbar() {
             <div className="text-black font-bold">
               <PiPhoneIncomingThin />
             </div>
-            <p className="text-[#111111] font-medium poppins text-xs md:text-base">+2349055348554</p>
+            <p className="text-[#111111] font-medium poppins text-xs md:text-base">+2349133333647</p>
           </div>
           <div className="flex items-center gap-2">
             <div className="text-black">

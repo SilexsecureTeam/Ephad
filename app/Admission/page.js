@@ -1,19 +1,60 @@
 import React from "react";
 import Homes from "../component/Homes/Homes";
+import {
+  BookOpenCheck,
+  Users,
+  Brain,
+  ShieldCheck,
+  UserCheck,
+  Globe
+} from "lucide-react";
 
 function Page() {
+
+const features = [
+  {
+    icon: <BookOpenCheck />,  // Represents high-quality education and standards
+    description:
+      "Provide high-quality education that meets international standards.",
+  },
+  {
+    icon: <Users />,  // Symbolizes inclusiveness and support
+    description:
+      'Foster an inclusive and supportive learning environment.',
+  },
+  {
+    icon: <Brain />,  // Critical thinking, creativity, problem-solving
+    description:
+      'Encourage critical thinking, creativity, and problem-solving skills.',
+  },
+  {
+    icon: <ShieldCheck />,  // Leadership, ethics, values
+    description:
+      'Develop leadership qualities and ethical values in our students.',
+  },
+  {
+    icon: <UserCheck />,  // Caring, professional staff
+    description:
+      'Caring and professional staff trained in early childhood education.',
+  },
+  {
+    icon: <Globe />,  // Global society readiness
+    description:
+      'Prepare students for success in a global society.',
+  },
+];
+
+
   return (
     <div>
       <Homes />
     <div className="w-full z-0 px-4 sm:px-6 md:px-10 lg:px-20 py-8 bg-white">
       <div className="grid items-center justify-center pt-20 pb-10 w-full text-center px-4">
         <h1 className="font-semibold roboto text-2xl sm:text-3xl md:text-[36px] text-[#111111] py-3">
-          Our Special Features
+         Admission Process
         </h1>
-        <p className="">
-          Embark on a remarkable educational journey with us! Our Admission and
-          Enrollment process is the gateway to providing your child with an
-          exceptional learning experience at our kindergarten school
+        <p className="roboto max-w-[90%] md:max-w-[60%] mx-auto ">
+          Embark on a remarkable educational journey with us! Our Admission and Enrollment process is the gateway to providing your child with an exceptional learning experience at our kindergarten school
         </p>
       </div>
        
@@ -74,73 +115,45 @@ function Page() {
   </div>
 </div>
 
+   <div className="w-full mt-2"> <h1 className="font-bold text-xl md:text-2xl my-5">Entrance Exam</h1> 
+ 
+<h1 className="font-normal text-lg md:text-xl ">Our entrance exam is designed to assess the academic readiness and potential of 
+prospective students. It includes evaluations in literacy, numeracy, and general 
+knowledge suitable for the age group of the applicant. The exam schedule and 
+preparation guidelines will be provided upon application. </h1>
+
+<h1 className="font-bold text-xl md:text-2xl my-5">Academic Overview (Early Years & Primary)</h1>
+ 
+<h1 className="font-bold text-lg md:text-xl mb-1">Early Years:</h1>
+<h1 className="font-normal text-lg md:text-xl">Our early years program focuses on the foundational development of children aged 2-5 years. We emphasize play-based learning, social skills, and early literacy and numeracy.</h1>
+ 
+<h1 className="font-bold text-lg md:text-xl mb-1">Primary:</h1>
+<h1 className="font-normal text-lg md:text-xl">Our primary education program covers a broad curriculum that includes core subjects such as Mathematics, English, Science, and Social Studies. We also incorporate arts, physical education, and ICT to ensure a well-rounded education.</h1></div>
+
       <div className="grid items-center justify-center pt-20 pb-10 w-full text-center px-4">
-        <div className="w-full flex justify-center items-center">
-          <p className="w-[180px] border-t-3 border-2 roboto rounded-lg px-2 py-2">Our Features</p>
-        </div>
-        <h1 className="font-semibold roboto text-2xl sm:text-3xl md:text-[36px] text-[#111111] py-3">
-          Fee Structure
+        <h1 className="font-medium roboto text-2xl sm:text-3xl md:text-[36px] text-[#111111] py-3">
+          Aims and Objectives
         </h1>
-        <p className="text-sm sm:text-base md:text-[16px] font-normal roboto max-w-[90%] md:max-w-[55%] mx-auto pb-2">
-          Our fee structure is transparent, and we strive to keep our fees
-          competitive within the education sector. The fees vary based on the
-          program, age group, and any additional services chosen.
-        </p>
-      </div>
-
-      <div className="px-4 sm:px-6 py-4 mx-auto w-full border border-r-4 border-b-4 rounded-xl">
-        <div className="overflow-x-auto w-full py-3">
-          <table className="w-full min-w-[800px]">
-            <thead>
-              <tr className="bg-gray-100 text-left">
-                <td className="px-4 py-2 bg-blue-100 w-[240px] border">Program</td>
-                <td className="px-4 py-2 bg-blue-100 w-[240px] border">Age Group</td>
-                <td className="px-4 py-2 bg-blue-100 w-[240px] border">Annual Tuition</td>
-                <td className="px-4 py-2 bg-blue-100 w-[240px] border">Registration Fee</td>
-                <td className="px-4 py-2 bg-blue-100 w-[240px] border">Application Fee</td>
-              </tr>
-              {[
-                ["Nursery", "2 - 3 Years", "$1,686", "$162", "$12"],
-                ["Pre-Kindergatens", "3 - 4 Years", "$2,686", "$220", "$16"],
-                ["Kindergatens", "4 -5 Years", "$3,686", "$340", "$20"],
-              ].map(([program, age, tuition, reg, app], i) => (
-                <tr className="bg-gray-100 text-left" key={i}>
-                  <td className="px-4 py-2 bg-blue-50 border">{program}</td>
-                  <td className="px-4 py-2 bg-blue-50 border">{age}</td>
-                  <td className="px-4 py-2 bg-blue-50 border">{tuition}</td>
-                  <td className="px-4 py-2 bg-blue-50 border">{reg}</td>
-                  <td className="px-4 py-2 bg-blue-50 border">{app}</td>
-                </tr>
-              ))}
-            </thead>
-          </table>
+<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-6 gap-9 sm:gap-15 w-full mx-auto">
+          {features.map((feature, index) => (
+            <div
+              key={index}
+              className="relative border-2 border-r-5 border-b-5 border-black rounded-xl p-6 md:p-8 w-full max-w-[400px] mx-auto transition-transform hover:scale-105"
+              role="region"
+              aria-label={feature.title}
+            >
+              <div className="absolute -top-[20px] left-[15%] transform -translate-x-1/2 bg-[#FFDECC] border border-black rounded-md p-2 text-xl md:text-2xl">
+                {feature.icon}
+              </div>
+              <p className="text-sm md:text-base roboto font-normal pt-3">
+                {feature.description}
+              </p>
+            </div>
+          ))}
         </div>
       </div>
 
-      <div className="px-4 sm:px-6 my-16 mx-auto w-full border border-r-4 border-b-4 rounded-xl">
-        <div className="overflow-x-auto w-full py-6">
-          <table className="w-full min-w-[600px]">
-            <thead>
-              <tr className="bg-gray-100 text-left">
-                <td className="px-4 py-3 text-[20px] font-bold bg-blue-100 border">
-                  Additional Services
-                </td>
-                <td className="px-4 py-3 bg-blue-100 border"></td>
-              </tr>
-              {[
-                ["Before and After-School Care", "$180 / per month"],
-                ["Language Immersion Program", "$60 / per semester"],
-                ["Transportation (Optional)", "$80 / per month"],
-              ].map(([service, cost], i) => (
-                <tr className="bg-gray-100 text-left" key={i}>
-                  <td className="px-4 py-2 bg-blue-50 border">{service}</td>
-                  <td className="px-4 py-2 bg-blue-50 border">{cost}</td>
-                </tr>
-              ))}
-            </thead>
-          </table>
-        </div>
-      </div>
+      
     </div>
 </div>
   );

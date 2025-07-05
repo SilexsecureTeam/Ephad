@@ -23,7 +23,7 @@ function Page() {
           >
             About Us
           </h1>
-          <p className="text-sm sm:text-base md:text-xl font-normal roboto max-w-[90%] mx-auto pb-2">
+          <p className="text-sm sm:text-base md:text-xl font-normal roboto max-w-[60%] mx-auto pb-2">
             Welcome to Epad ICT Academy, a hub of innovation and excellence
             dedicated to equipping individuals with the skills and knowledge
             needed to thrive in the digital age. Located in Abuja, Nigeria, we
@@ -46,7 +46,7 @@ function Page() {
 
         {/* Mission & Vision Cards */}
         <section className="flex flex-col lg:flex-row items-center justify-between gap-6 lg:gap-10 w-full py-6 lg:py-10">
-          <div className="border-2 border-r-6 border-b-6 shadow-sm md:h-[350px] shadow-black p-6 lg:p-10 rounded-xl w-full ">
+          <div className="border-2 border-r-6 border-b-6 shadow-sm md:h-[400px] shadow-black p-6 lg:p-10 rounded-xl w-full ">
             <div className="flex justify-between items-center pb-5">
               <h1 className="font-semibold roboto text-2xl sm:text-3xl md:text-[36px] text-[#111111]">
                 Mission
@@ -57,16 +57,18 @@ function Page() {
                 className="w-14 h-14 lg:w-16 lg:h-16"
               />
             </div>
-            <p className="text-sm sm:text-base md:text-lg font-normal roboto w-full mx-auto">
-              At Little Learners Academy, our mission is to inspire a passion
-              for learning and empower young minds to become confident,
-              compassionate, and creative individuals. We strive to create a
-              safe and inclusive space where children thrive academically,
-              socially, and emotionally, setting the stage for a successful
-              educational journey.
+            <p className="text-sm sm:text-base md:text-lg pb-8 font-normal roboto w-full mx-auto">
+              At Epad ICT Academy, our mission is to transform lives through
+              technology education. With a focus on hands-on learning,
+              cutting-edge resources, and personalized support, we help our
+              students develop essential ICT skills, from basic computer
+              literacy to advanced technical expertise. Our programs are
+              tailored to meet the evolving demands of the global job market,
+              ensuring our graduates are prepared for success in today's
+              technology-driven world.
             </p>
           </div>
-          <div className="border-2 border-r-6 border-b-6 shadow-sm shadow-black md:h-[350px] p-6 lg:p-10 rounded-xl w-full ">
+          <div className="border-2 border-r-6 border-b-6 shadow-sm shadow-black md:h-[400px] p-6 lg:p-10 rounded-xl w-full ">
             <div className="flex justify-between items-center pb-5">
               <h1 className="font-semibold roboto text-2xl sm:text-3xl md:text-[36px] text-[#111111]">
                 Vision
@@ -77,12 +79,12 @@ function Page() {
                 className="w-14 h-14 lg:w-16 lg:h-16"
               />
             </div>
-            <p className="text-sm sm:text-base md:text-lg font-normal roboto w-full mx-auto">
-              Our vision is to be a beacon of educational excellence, where
-              children are encouraged to explore, discover, and express their
-              unique talents. We aim to foster a generation of lifelong learners
-              equipped with critical thinking, empathy, and a deep appreciation
-              for diversity.
+            <p className="text-sm sm:text-base md:text-lg pb-8 font-normal roboto w-full mx-auto">
+              We believe in fostering innovation, critical thinking, and
+              creativity in a supportive environment that inspires learners to
+              achieve their goals. Whether you're a beginner or a professional
+              looking to enhance your ICT skills, Epad ICT Academy is your
+              partner on the journey to success.
             </p>
           </div>
         </section>

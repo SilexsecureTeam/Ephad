@@ -21,7 +21,7 @@ import { FaRegCalendarPlus } from "react-icons/fa6";
 import Home from "./component/Home/Home";
 
 const events = [
-  { day: '16', month: 'May', title: 'Interim Marks Posted', date: '16 May 25', color: 'bg-teal-300' },
+  { day: '16', month: 'May', title: 'Interim Marks Posted (Regular School Day)', date: '16 May 25', color: 'bg-teal-300' },
   { day: '19', month: 'May', title: 'Victoria Day', date: '19 May 25', color: 'bg-pink-400' },
   { day: '22', month: 'May', title: 'Badminton Club', date: '22 May 25', color: 'bg-red-700' },
   { day: '29', month: 'May', title: 'Badminton Club', date: '16 May 25', color: 'bg-yellow-300' },
@@ -30,18 +30,18 @@ const events = [
 
 const testimonials = [
   {
-    text: "We provide students with timely and tailored support & services. We offer culturally sensitive and engaged teach learning and assessment needs.",
-    name: "Steven Martins",
+    text: "I like learning new things at Ephad International Academy! My teacher helps me read big words, and I'm learning to count so high!",
+    name: "Sekani Felix",
     department: "Humanities",
   },
   {
-    text: "We provide students with timely and tailored support & services. We offer culturally sensitive and engaged teach learning and assessment needs.",
-    name: "Geoffery",
+    text: "Ephad International Academy is fun because we learn about animals and space! And I can write my name all by myself now!.",
+    name: "Dora Idako",
     department: "Art and Commerce",
   },
   {
-    text: "We provide students with timely and tailored support & services. We offer culturally sensitive and engaged teach learning and assessment needs.",
-    name: "Joe Shelf",
+    text: "My teacher shows me how to draw letters, and we sing songs about numbers. I love learning at Ephad International Academy!.",
+    name: "Emmanuel Gideon",
     department: "Humanities",
   },
   {
@@ -112,18 +112,18 @@ function Page() {
 </div>
           <div className="w-full grid justify-center items-center text-[24px] text-center text-white">
             <h1 className="font-semibold roboto text-[30px] text-[#111111] py-8">Our Courses</h1>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 w-full gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 w-full ">
               <div>
                 <Image src={Health} alt="" className="w-full h-70 object-cover" />
-                <div className="bg-[#1D157C] w-full py-1 px-4">Health and Science</div>
+                <div className="bg-[#1D157C] w-full py-1 px-4">STEM Education</div>
               </div>
               <div>
                 <Image src={Buisness} alt="" className="w-full h-70 object-cover" />
-                <div className="bg-[#5B7BCE] w-full py-1 px-4">Business Academics</div>
+                <div className="bg-[#5B7BCE] text-black w-full py-1 px-4">Art and Creativity</div>
               </div>
               <div>
                 <Image src={History} alt="" className="w-full h-70 object-cover" />
-                <div className="bg-[#3C5494] px-4 py-1 w-full">History</div>
+                <div className="bg-[#3C5494] px-4 py-1 w-full">Play-Based Learning</div>
               </div>
             </div>
           </div>
@@ -158,38 +158,39 @@ function Page() {
             <div>
               <Image src={Anita} alt="" className="w-full h-[200px] sm:h-[250px] lg:h-[300px] object-cover" />
               <div className="flex justify-between text-[14px] bg-[#1D157C] w-full py-2 px-4">
-                <p className="font-bold truncate">Anita lee</p>
-                <p className="font-normal truncate">Art Director</p>
+                <p className="font-bold truncate">Ggwua Joy Ifeoma</p>
+                <p className="font-normal truncate">Teacher</p>
               </div>
             </div>
             <div>
               <Image src={Bruce} alt="" className="w-full h-[200px] sm:h-[250px] lg:h-[300px] object-cover" />
               <div className="flex justify-between text-[14px] bg-[#5B7BCE] w-full py-2 px-4">
-                <p className="font-bold truncate">Bruce Smith</p>
-                <p className="font-normal truncate">Art Director</p>
+                <p className="font-bold truncate">Samuel .O. Ayorinde</p>
+                <p className="font-normal truncate">Teacher</p>
               </div>
             </div>
             <div>
               <Image src={Jack} alt="" className="w-full h-[200px] sm:h-[250px] lg:h-[300px] object-cover object-center" />
               <div className="flex justify-between text-[14px] bg-[#1D157C] px-4 py-2 w-full">
                 <p className="font-bold truncate">Jack Nicho</p>
-                <p className="font-normal truncate">Art Director</p>
+                <p className="font-normal truncate">Teacher</p>
               </div>
             </div>
             <div>
               <Image src={Calvin} alt="" className="w-full h-[200px] sm:h-[250px] lg:h-[300px] object-cover" />
               <div className="flex justify-between text-[14px] bg-[#5B7BCE] w-full py-2 px-4">
-                <p className="font-bold truncate">Cruise</p>
-                <p className="font-normal truncate">Art Director</p>
+                <p className="font-bold truncate">Idakwo Victor .O.</p>
+                <p className="font-normal truncate">Teacher</p>
               </div>
             </div>
             <div>
               <Image src={Anitalee} alt="" className="w-full h-[200px] sm:h-[250px] lg:h-[300px] object-cover" />
               <div className="flex justify-between text-[14px] bg-[#1D157C] w-full py-2 px-4">
-                <p className="font-bold truncate">Anita lee</p>
-                <p className="font-normal truncate">Art Director</p>
+                <p className="font-bold truncate">Kate Anukan Ebieme</p>
+                <p className="font-normal truncate">Teacher</p>
               </div>
             </div>
+
           </div>
         </section>
 
@@ -228,11 +229,11 @@ function Page() {
                   key={index}
                   className="w-full sm:w-1/2 lg:w-1/3 flex-shrink-0 px-2"
                 >
-                  <p className="text-[19px] w-full py-2 font-light">
+                  <p className="text-[15px] text-[#111111] w-full py-2 font-light">
                     “{testimonial.text}”
                   </p>
                   <p className="font-extrabold text-[24px] pt-2">{testimonial.name}</p>
-                  <p className="text-[14px] font-normal text-[#111111]">{testimonial.department}</p>
+                  {/* <p className="text-[14px] font-normal text-[#111111]">{testimonial.department}</p> */}
                 </div>
               ))}
             </div>
@@ -259,7 +260,7 @@ function Page() {
                   <span className="uppercase text-sm">{evt.month}</span>
                 </div>
                 <div className="flex flex-col max-w-35 justify-center px-4 py-3">
-                  <p className="text-sm font-medium">{evt.title}</p>
+                  <p className="text-[12px] font-normal">{evt.title}</p>
                   <div className="flex items-center text-xs text-gray-600 mt-1">
                     <FaRegCalendarPlus className="mr-1" />
                     <span>{evt.date}</span>
